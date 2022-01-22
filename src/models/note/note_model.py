@@ -1,4 +1,4 @@
-from models.base.base_model import BaseNotionModel
+from notion_orm.base.base_model import BaseNotionModel
 class Note(BaseNotionModel):
     def __init__(self, properties=None, getParams=False):
         self.name  = None
