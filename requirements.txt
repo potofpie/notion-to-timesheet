@@ -1,2 +1,2 @@
-notion-database==20210513.4
 python-dotenv==0.17.1
+git+https://github.com/potofpie/notion-orm#egg=notion_orm
