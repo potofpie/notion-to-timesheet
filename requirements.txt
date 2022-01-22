@@ -1,0 +1,2 @@
+notion-database==20210513.4
+python-dotenv==0.17.1
