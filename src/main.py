@@ -17,7 +17,7 @@ for r in database.result['results']:
     notes.append(n)
 
 def fun(note):
-    if ('TimeTracking' in note.note_type):
+    if ('TimeTracking' in note.notetype):
         return True
     else:
         return False
