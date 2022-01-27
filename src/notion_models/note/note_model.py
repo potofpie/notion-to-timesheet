@@ -1,3 +1,4 @@
+import json
 from notion_orm.base.base_model import BaseNotionModel
 class Note(BaseNotionModel):
     def __init__(self, properties=None, getParams=False):
@@ -8,6 +9,8 @@ class Note(BaseNotionModel):
         self.datecreated = None
         self.hourspan = None
         self.hours = None
+        self.time = None
+
         if(not getParams):
             super(Note, self).parse_result(properties)
        

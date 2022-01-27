@@ -2,3 +2,4 @@ venv
 *.csv
 .env
 .vscode/*
+tempo-upload-for-bobby/*
