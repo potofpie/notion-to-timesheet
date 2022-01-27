@@ -39,16 +39,16 @@ def export_to_tempo(tracking_notes):
         # results.append(r.json())
 
 
-# writing to csv file 
-def export_csv(tracking_notes):
-    with open('./test.csv', 'w') as csvfile:  
-        # for i in tracking_notes:
-        #     print(i) 
-        csvwriter = csv.writer(csvfile) 
-        headers = list(Note(getParams=True).__dict__.keys())
-        csvwriter.writerow(headers)
-        for n in tracking_notes:
-            csvwriter.writerow([getattr(n,h) for h in headers])
+# # writing to csv file 
+# def export_csv(tracking_notes):
+#     with open('./test.csv', 'w') as csvfile:  
+#         # for i in tracking_notes:
+#         #     print(i) 
+#         csvwriter = csv.writer(csvfile) 
+#         headers = list(Note(getParams=True).__dict__.keys())
+#         csvwriter.writerow(headers)
+#         for n in tracking_notes:
+#             csvwriter.writerow([getattr(n,h) for h in headers])
 
 if __name__ == "__main__":
     database = Database(integrations_token=NOTION_INTEGRATION_TOKEN)
