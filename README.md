@@ -5,5 +5,7 @@ This project uses npm to run the python scripts.
 ```npm run setup``` 
 ## Usage
 ```npm run start```
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+## Todo 
+- [ ] filter by date 
+- [ ] make the request
+- [ ] undo functionality 
